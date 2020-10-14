@@ -1,0 +1,55 @@
+
+.site {
+    font-family: 'Roboto', sans-serif;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-areas: 
+        ". banner ."
+        "sidebar main .";
+}
+
+.banner {
+    color: #0c0c0c;
+    background-color: #fff;
+    grid-area: banner;
+    display: flex;
+    justify-content: center;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    nav ul {
+        list-style-type: none;
+        text-align: right;
+
+        li {
+            box-sizing: border-box;
+            background-color: #119582;
+            margin: 0.25em 0;
+            padding: 0.25em;
+            padding-left: 1em;
+            cursor: pointer;
+
+            a {
+                text-decoration: none;
+                color: #fff;
+                margin-right: 0.5em;
+            }
+        }
+    }
+}
+
+.main {
+    grid-area: main;
+    background-color: #fff;
+}
+
+
+
+
+
+
